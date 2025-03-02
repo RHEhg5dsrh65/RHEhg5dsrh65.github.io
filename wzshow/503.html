@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Linux统下查看IP配置文件详解，方法与技巧一网打尽_git网址导航</title>
+        <meta name="keywords" content="Linux统下查看IP配置文件详解，方法与技巧一网打尽">
+        <meta name="description" content="免费资源下载站|最新电影下载|音乐下载网站|电子书免费下载***
+
+为伊人下载站提供最新最全的免费资源下载服务，包括高清电影、热门音乐、畅销电子书等。我们致力于..">
+	    <link rel="shortcut icon" type="images/x-icon" href="./favicon.ico"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome-4.7.0/css/font-awesome.css"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/ozui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="/templates/antidote/css/style.css"/>
+    </head>
+    <body>
+<header class="header fixed">
+	<div class="container">
+		<div class="nav-bar">
+			<span></span>
+		</div>
+		<a class="logo" href="./">git网址导航</a>
+	<ul class="nav">
+				<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> <span>导航首页</span></a></li>
+	<li><a href="/ranking.html"><i class="fa fa-flag" aria-hidden="true"></i> <span>排行榜单</span></a></li>
+	<li><a href="/apply.html"><i class="fa fa-plus-square" aria-hidden="true"></i> <span>申请收录</span></a></li>
+	<li><a href="/wz.html"><i class="fa fa-book" aria-hidden="true"></i> <span>文章信息</span></a></li>
+	<li><a href="/about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>关于本站</span></a></li>
+</ul>
+	</div>
+</header><div class="banner">
+    <ul class="search-type">
+        <span class="title">搜索</span>
+        <li data-type="this" class="active">本站</li>
+        <li data-type="baidu">百度</li>
+        <li data-type="sogou">搜狗</li>
+        <li data-type="360">360</li>
+        <li data-type="bing">必应</li>
+    </ul>
+    <form class="search-main" action="/search.html" method="get">
+        <input class="search-input" placeholder="请输入关键词..." name="keyword" required="required">
+        <button type="submit" class="search-btn">本站搜索</button>
+    </form>
+</div>
+<div class="container">
+    <ul class="sort">
+        <li><a href="/"><span>返回首页</span> <i class="fa fa-reply fa-fw"></i></a></li>
+<li><a href="/sort/1.html" class=""><span>大型网站</span> <i class="fa fa-paper-plane fa-fw"></i></a></li>
+<li><a href="/sort/2.html" class=""><span>手游网</span> <i class="fa fa-file-text fa-fw"></i></a></li>
+<li><a href="/sort/3.html" class=""><span>下载网站</span> <i class="fa fa-cubes fa-fw"></i></a></li>
+<li><a href="/sort/4.html" class=""><span>影音网站</span> <i class="fa fa-youtube-play fa-fw"></i></a></li>
+<li><a href="/sort/5.html" class=""><span>IDC网站</span> <i class="fa fa-cloud fa-fw"></i></a></li>
+<li><a href="/sort/6.html" class=""><span>seo工具</span> <i class="fa fa-line-chart  fa-fw"></i></a></li>
+                </ul>
+	<div class="card board">
+		<span class="icon"><i class="fa fa-map-signs fa-fw"></i></span>
+<a href="/">导航首页</a>&nbsp;»&nbsp;<a title="网站优化" href="/wz/3.html">网站优化</a></div>
+	<div class="card">
+		<div class="card-body">
+<div class="content">
+				<h1>Linux统下查看IP配置文件详解，方法与技巧一网打尽</h1>
+				<em>1740837235&nbsp;&nbsp;&nbsp;&nbsp;git网址导航&nbsp;&nbsp;&nbsp;&nbsp;已浏览957次</em><br><br>
+				
+                                        <ol type="1"><li>查看IP配置文件的方法</li><li>修改IP配置文件</li></ol><p>在Linux操作系统中，IP配置文件扮演着至关重要的角色，它是系统配置的核心所在，记录了网络接口的IP地址、子网掩码、默认网关等重要信息，正确地查看和管理IP配置文件对于故障诊断和系统维护具有重要意义，本文将深入探讨Linux操作系统中查看IP配置文件的方法和技巧，旨在帮助读者更好地理解和操作系统网络配置。</p><h2 id="id1">查看IP配置文件的方法</h2><p>1. 使用ifconfig命令</p><p>ifconfig命令是Linux操作系统中查看网络接口IP配置的传统工具，以下是一个查看eth0接口IP配置的示例：</p><pre class="brush:bash;toolbar:false"><p>[root@linux ~]# ifconfig eth0</p><p>eth0      Link encap:Ethernet  HWaddr 00:0C:29:1A:7E:3F</p><p>          inet addr:192.168.1.100  Bcast:192.168.1.255  Mask:255.255.255.0</p><p>          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1</p><p>          RX packets:1234567 errors:0 dropped:0 overruns:0 frame:0</p><p>          TX packets:1234567 errors:0 dropped:0 overruns:0 carrier:0 collisions:0</p><p>          RX bytes:9876543210 (9.5 MB)  TX bytes:9876543210 (9.5 MB)</p></pre><p>2. 使用ip命令</p><p>ip命令是Linux操作系统中查看网络接口IP配置的新兴工具，相较于ifconfig命令，它提供了更加强大和灵活的查询功能，以下是一个查看eth0接口IP配置的示例：</p><p style="text-align:center"><img src="http://www.whxkw.com/zb_users/upload/2025/02/20250228153727174072824756719.jpg" alt="Linux统下查看IP配置文件详解，方法与技巧一网打尽,Linux操作系统下查看IP配置文件详解，方法与技巧一网打尽,Linux,IP地址,第1张" title="Linux统下查看IP配置文件详解，方法与技巧一网打尽,Linux,IP地址,第1张"></p><pre class="brush:bash;toolbar:false"><p>[root@linux ~]# ip addr show eth0</p><p>2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default</p><p>    link/ether 00:0c:29:1a:7e:3f brd ff:ff:ff:ff:ff:ff</p><p>    inet 192.168.1.100/24 brd 192.168.1.255 scope global eth0</p><p>       valid_lft forever preferred_lft forever</p><a href="http://www.97jav.com" style="color:red" alt="仙逆樱花动漫全集完整版在线播放在线观看">仙逆樱花动漫全集完整版在线播放在线观看</a><p>    inet6 fe80::20c:29ff:fe1a:7e3f/64 scope link</p><p>       valid_lft forever preferred_lft forever</p></pre><p>3. 使用cat命令查看配置文件</p><p>Linux操作系统中，IP配置文件通常位于<code>/etc</code>目录下，以下是一个查看eth0接口IP配置文件的示例：</p><pre class="brush:bash;toolbar:false"><p>[root@linux ~]# cat /etc/sysconfig/network-scripts/ifcfg-eth0</p><p>TYPE=Ethernet</p><p>PROX<a href="http://www.xscalper.com" style="color:red" alt="如懿传国产剧全集完整版在线播放在线观看">如懿传国产剧全集完整版在线播放在线观看</a>Y_METHOD=none</p><p>BROWSER_ONLY=no</p><p>BOOTPROTO=static</p><p>DEFROUTE=yes</p><p>IPV4_FAILURE_FATAL=no</p><p>IPV6INIT=yes</p><p>IPV6_AUTOCONF=yes</p><p>IPV6_DEFROUTE=yes</p><p><a href="http://www.usagiftbox.com" style="color:red" alt="星辰影院">星辰影院</a>IPV6_FAILURE_FATAL=no</p><p>IPV6_ADDR_GEN_MODE=stable-privacy</p><p>NAME=eth0</p><p>UUID=3e7b9b1c-9c3b-4b7b-8f0a-8e8a0c7a0c8c</p><p>DEVICE=eth0</p><p>ONBOOT=yes</p><p>IPADDR=192.168.1.100</p><p>NETMASK=255.255.255.0</p><p>GATEWAY=192.168.1.1</p></pre><h2 id="id2">修改IP配置文件</h2><p>在Linux操作系统中，修改IP配置文件通常涉及以下步骤：</p><p>1. 使用文本编辑器打开IP配置文件，如vi、vim、gedit等。</p><p>2. 修改IP地址、子网掩码、默认网关等参数。</p><p>3. 保存并关闭文件。</p><p>4. 重启网络服务或重启系统使配置生效。</p><p>以下是一个使用vi编辑器修改eth0接口IP地址的示例：</p><pre class="brush:bash;toolbar:false"><p>[root@linux ~]# vi /etc/sysconfig/network-scripts/ifcfg-eth0</p></pre><p>在打开的文件中，找到<code>IPADDR</code>行，修改其值为新的IP地址，</p><pre class="brush:code;toolbar:false"><p>IPADDR=192.168.1.101</p></pre><p>保存并关闭文件，重启网络服务或重启系统以使配置生效。</p><p>本文详细介绍了Linux操作系统中查看和修改IP配置文件的方法和技巧，通过这些方法，读者可以轻松地查看和管理系统的网络配置，这对于日常的维护和故障排查工作大有裨益，希望本文能够对您有所帮助。</p><br><br>
+			</div>
+		</div>
+
+	</div>
+	<div class="card">
+            <div class="card-head">
+                <i class="fa fa-magnet fa-fw" aria-hidden="true"></i> 猜你喜欢
+            </div>
+            <div class="card-body">
+			                                            <a href="/wzshow/571.html" class="item" title="苹果夜间，揭秘苹果公司的幕后运维策略" data-id="">
+                            <span class="name">苹果夜间，揭秘苹果公司的幕后运维策略</span>
+                        </a>                                            <a href="/wzshow/241.html" class="item" title="揭SEO，助力企业营销，提升品牌影响力的利器" data-id="">
+                            <span class="name">揭SEO，助力企业营销，提升品牌影响力的利器</span>
+                        </a>                                            <a href="/wzshow/107.html" class="item" title="优化工具排名优化，揭秘提升排名的五大神器" data-id="">
+                            <span class="name">优化工具排名优化，揭秘提升排名的五大神器</span>
+                        </a>                                            <a href="/wzshow/470.html" class="item" title="Linux环境下快速创建空白文件的五种方法" data-id="">
+                            <span class="name">Linux环境下快速创建空白文件的五种方法</span>
+                        </a>                                            <a href="/wzshow/332.html" class="item" title="碧空之歌转出，玩家热议，回应揭晓" data-id="">
+                            <span class="name">碧空之歌转出，玩家热议，回应揭晓</span>
+                        </a>                                            <a href="/wzshow/713.html" class="item" title="电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升" data-id="">
+                            <span class="name">电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升</span>
+                        </a>                                            <a href="/wzshow/205.html" class="item" title="Linux统中的端口管理，如何关闭不必要的端口以增强安全性" data-id="">
+                            <span class="name">Linux统中的端口管理，如何关闭不必要的端口以增强安全性</span>
+                        </a>                                            <a href="/wzshow/442.html" class="item" title="Windows 10必须要激活才能使用吗？全面解析统激活的重要性" data-id="">
+                            <span class="name">Windows 10必须要激活才能使用吗？全面解析统激活的重要性</span>
+                        </a>                                            <a href="/wzshow/236.html" class="item" title="Python开发之WebView应用实战，打造个性化小程序体验" data-id="">
+                            <span class="name">Python开发之WebView应用实战，打造个性化小程序体验</span>
+                        </a>                                            <a href="/wzshow/506.html" class="item" title="Python 3程序开发指南（版），全面升级的编程圣经" data-id="">
+                            <span class="name">Python 3程序开发指南（版），全面升级的编程圣经</span>
+                        </a>                                            <a href="/wzshow/407.html" class="item" title="MacBook Pro深度解析，如何配置Windows统" data-id="">
+                            <span class="name">MacBook Pro深度解析，如何配置Windows统</span>
+                        </a>                                            <a href="/wzshow/355.html" class="item" title="Linux环境下高效多线程编程，设置和管理多个子线程的指南" data-id="">
+                            <span class="name">Linux环境下高效多线程编程，设置和管理多个子线程的指南</span>
+                        </a>                                            <a href="/wzshow/461.html" class="item" title="Windows统下轻松查看IP地址的五大方法" data-id="">
+                            <span class="name">Windows统下轻松查看IP地址的五大方法</span>
+                        </a>                                            <a href="/wzshow/333.html" class="item" title="Windows 10自带主题删除攻略，轻松恢复统清爽界面" data-id="">
+                            <span class="name">Windows 10自带主题删除攻略，轻松恢复统清爽界面</span>
+                        </a>                                       
+                                </div>
+        </div>
+    <div class="card links">
+        <div class="card-head"><i class="fa fa-link fa-fw"></i>友情链接</div>
+        <div class="card-body">
+			                                <a href="http://www.blucb.com" target="_blank">56手游网</a>
+                                <a href="http://www.bitmp3.net" target="_blank">辣椒手游网</a>
+                                <a href="http://www.ferryven.net" target="_blank">秋霞手游网</a>
+                                <a href="http://www.alleycatbead.com" target="_blank">18手游网</a>
+                                <a href="http://www.leparamoteur.com" target="_blank">策驰手游网</a>
+                                <a href="http://www.leparamoteur.com" target="_blank">策驰手游网</a>
+                                <a href="http://www.forestparkapp.com" target="_blank">丫丫手游网</a>
+                                <a href="http://www.hyperboxgames.com" target="_blank">夜魔手游网</a>
+                                <a href="http://www.topperbd.com" target="_blank">第一下载站</a>
+                                <a href="http://www.hans-schulte.com" target="_blank">琪琪下载站</a>
+                                <a href="http://www.stoozhi.com" target="_blank">777下载站</a>
+                                <a href="http://www.stoozhi.com" target="_blank">777下载站</a>
+                                <a href="http://www.gram21.com" target="_blank">星辰手游网</a>
+                                <a href="http://www.goaplay.com" target="_blank">优美手游网</a>
+                                <a href="http://www.goaplay.com" target="_blank">优美手游网</a>
+                                <a href="http://www.2dgameworld.com" target="_blank">全能下载站</a>
+                                <a href="http://www.hc1976.com" target="_blank">深夜下载站</a>
+                                <a href="http://www.joltleft.com" target="_blank">西瓜手游网</a>
+                                <a href="http://www.ambipurcar.com" target="_blank">木瓜下载站</a>
+                                <a href="http://www.ventanalegal.com" target="_blank">咪咪手游网</a>
+                        </div>
+    </div>
+ </div>
+<ul class="suspend">
+	<li class="back-top" onclick="backTop()">
+		<i class="fa fa-chevron-up"></i>
+		<span class="more">返回顶部</span>
+	</li>
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+			<i class="fa fa-qq"></i>
+			<span class="more">123456</span>
+		</a>
+	</li>
+	<li>
+		<a href="/cdn-cgi/l/email-protection#112023222524275160603f727e7c">
+			<i class="fa fa-envelope"></i>
+			<span class="more"><span class="__cf_email__" data-cfemail="28191a1b1c1d1e685959064b4745">[email&#160;protected]</span></span>
+		</a>
+	</li>
+	<li>
+		<i class="fa fa-weixin"></i>
+		<span class="more weixin"><img src="/assets/images/weixin.png" alt="微信二维码"></span>
+	</li>
+</ul>
+
+<footer class="footer">
+	<p>Copyright © 2025	<a href="/">git网址导航</a>. All Rights Reserved.</p>
+	<p><div style="display:none;"></div>﻿</p>
+</footer>
+<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/layer/layer.js"></script>
+<script src="/templates/antidote/js/main.js"></script>
+<div class="blx">
+<svg class="wbc"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 130 18"
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="zxt">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#FF3E86"/>
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#9CBB1B"/>
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#00D0FF"/> 
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#FFAA00"/> 
+  </g>
+</svg>
+</div>
+</body>
+</html>

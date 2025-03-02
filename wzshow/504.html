@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Linux统下如何为SFTP服务添加新用户_git网址导航</title>
+        <meta name="keywords" content="Linux统下如何为SFTP服务添加新用户">
+        <meta name="description" content="为您提供最全面、最丰富的资源下载服务，包括软件、游戏、影视、音乐等各类资源。我们的下载站致力于为用户提供安全、快速、便捷的下载体验，所有资源均经过严格筛选和测试..">
+	    <link rel="shortcut icon" type="images/x-icon" href="./favicon.ico"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome-4.7.0/css/font-awesome.css"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/ozui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="/templates/antidote/css/style.css"/>
+    </head>
+    <body>
+<header class="header fixed">
+	<div class="container">
+		<div class="nav-bar">
+			<span></span>
+		</div>
+		<a class="logo" href="./">git网址导航</a>
+	<ul class="nav">
+				<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> <span>导航首页</span></a></li>
+	<li><a href="/ranking.html"><i class="fa fa-flag" aria-hidden="true"></i> <span>排行榜单</span></a></li>
+	<li><a href="/apply.html"><i class="fa fa-plus-square" aria-hidden="true"></i> <span>申请收录</span></a></li>
+	<li><a href="/wz.html"><i class="fa fa-book" aria-hidden="true"></i> <span>文章信息</span></a></li>
+	<li><a href="/about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>关于本站</span></a></li>
+</ul>
+	</div>
+</header><div class="banner">
+    <ul class="search-type">
+        <span class="title">搜索</span>
+        <li data-type="this" class="active">本站</li>
+        <li data-type="baidu">百度</li>
+        <li data-type="sogou">搜狗</li>
+        <li data-type="360">360</li>
+        <li data-type="bing">必应</li>
+    </ul>
+    <form class="search-main" action="/search.html" method="get">
+        <input class="search-input" placeholder="请输入关键词..." name="keyword" required="required">
+        <button type="submit" class="search-btn">本站搜索</button>
+    </form>
+</div>
+<div class="container">
+    <ul class="sort">
+        <li><a href="/"><span>返回首页</span> <i class="fa fa-reply fa-fw"></i></a></li>
+<li><a href="/sort/1.html" class=""><span>大型网站</span> <i class="fa fa-paper-plane fa-fw"></i></a></li>
+<li><a href="/sort/2.html" class=""><span>手游网</span> <i class="fa fa-file-text fa-fw"></i></a></li>
+<li><a href="/sort/3.html" class=""><span>下载网站</span> <i class="fa fa-cubes fa-fw"></i></a></li>
+<li><a href="/sort/4.html" class=""><span>影音网站</span> <i class="fa fa-youtube-play fa-fw"></i></a></li>
+<li><a href="/sort/5.html" class=""><span>IDC网站</span> <i class="fa fa-cloud fa-fw"></i></a></li>
+<li><a href="/sort/6.html" class=""><span>seo工具</span> <i class="fa fa-line-chart  fa-fw"></i></a></li>
+                </ul>
+	<div class="card board">
+		<span class="icon"><i class="fa fa-map-signs fa-fw"></i></span>
+<a href="/">导航首页</a>&nbsp;»&nbsp;<a title="SEO技巧" href="/wz/2.html">SEO技巧</a></div>
+	<div class="card">
+		<div class="card-body">
+<div class="content">
+				<h1>Linux统下如何为SFTP服务添加新用户</h1>
+				<em>1740837237&nbsp;&nbsp;&nbsp;&nbsp;git网址导航&nbsp;&nbsp;&nbsp;&nbsp;已浏览150次</em><br><br>
+				
+                                        <p style="text-align:center"><img src="http://www.whxkw.com/zb_users/upload/2025/02/20250228151827174072710760481.jpg" alt="Linux统下如何为SFTP服务添加新用户,Linux统下如何为SFTP服务添加新用户,Linux,存储,第1张" title="Linux统下如何为SFTP服务添加新用户,Linux,存储,第1张"></p><p>- [1. 确认SFTP服务已安装](#id1)</p><p>- [2. 新建SFTP用户账户](#id2)</p><p>- [3. 设置用户密码](#id3)</p><p>- [4. 配置SFTP权限](#id4)</p><p>- [5. 创建SFTP用户的配置文件](#id5)</p><p>- [6. 进行SFTP连接](#id6)</p><p>在Linux操作系统中，SFTP（安全文件传输协议）是一种通过SSH（安全外壳协议）进行文件传输的安全通信协议，它为文件传输提供了加密的安全环境，为了通过SFTP进行文件传输，通常需要在Linux系统中创建一个专用的SFTP用户，以下是在Linux系统中为SFTP服务添加新用户的详细步骤。</p><p>1. 确认SFTP服务已安装</p><p>在添加SFTP用户之前，首先需要确认SFTP服务是否已经安装，大多数Linux发行版默认安装了SSH服务，而SFTP服务通常与SSH服务一同安装，可以通过以下命令检查SSH服务是否已安装：</p><pre class="brush:bash;toolbar:false">
+ssh<a href="http://www.zdwlx.com" style="color:red" alt="番茄游戏网">番茄游戏网</a> -V</pre><p>如果SSH服务未安装，可以使用以下命令进行安装：</p><p><strong>基于Debian的系统（如Ubuntu）：</strong></p><pre class="brush:bash;toolbar:false">
+sudo apt-get update
+sudo apt-get install openssh-server</pre><p><strong>基于Red Hat的系统（如CentOS）：</strong></p><pre class="brush:bash;toolbar:false">
+sudo yum install openssh-server</pre><p>2. 新建SFTP用户账户</p><p>创建SFTP用户与创建普通Linux用户的过程相似，可以使用<code>useradd</code>命令创建用户：</p><pre class="brush:bash;toolbar:false">
+sudo useradd -m -d /home/sftpuser -s /bin/bash sftpuser</pre><p><code>-m</code>参数用于创建用户的主目录，<code>-d</code>参数指定用户的主目录路径，<code>-s</code>参数指定用户的默认shell。</p><p>3. 设置用户密码</p><p>为SFTP用户设置密码，可以使用<code>passwd</code>命令：</p><a href="http://www.nomoresplash.com" style="color:red" alt="布丁影院">布丁影院</a><pre class="brush:bash;toolbar:false">
+sudo passwd sftpuser</pre><p>按照提示输入两次密码即可。</p><p>4. 配置SFTP权限</p><p>为确保SFTP用户只能访问其家目录，需要修改用户的权限设置：</p><p>- 切换到root用户：</p><pre class="brush:bash;toolbar:false">
+sudo su</pre><p>- 将SFTP用户的家目录的所<a href="http://www.jakeanddiana.com" style="color:red" alt="星辰影院">星辰影院</a>有者改为用户本人：</p><pre class="brush:bash;toolbar:false">
+chown sftpuser:sftpuser /home/sftpuser</pre><p>- 将SFTP用户的家目录的权限设置为700，确保只有用户本人可以访问：</p><pre class="brush:bash;toolbar:false">
+chmod 700 /home/sftpuser</pre><p>- 允许用户通过SSH访问SFTP服务，编辑<code>/etc/ssh/sshd_config</code>文件：</p><pre class="brush:bash;toolbar:false">
+sudo nano /etc/ssh/sshd_config</pre><p>找到并修改以下行：</p><pre class="brush:bash;toolbar:false">
+Subsystem sftp /usr/lib/openssh/sftp-server</pre><p>确保<code>Subsystem</code>行后面没有注释符号（<code>#</code>）。</p><p>- 保存并退出文件。</p><p>- 重启SSH服务以应用更改：</p><pre class="brush:bash;toolbar:false">
+sudo systemctl restart ssh</pre><p>5. 创建SFTP用户的配置文件</p><p>在用户的主目录下创建一个名为<code>.sftp</code>的隐藏目录，并设置相应的权限：</p><pre class="brush:bash;toolbar:false">
+sudo mkdir /home/sftpuser/.sftp
+sudo chown sftpuser:sftpuser /home/sftpuser/.sftp
+sudo chmod 700 /home/sftpuser/.sftp</pre><p>在<code>.sftp</code>目录下创建一个名为<code>授权文件名</code>的文件，例如<code>authorized_keys</code>，用于存储允许访问SFTP的用户公钥：</p><pre class="brush:bash;toolbar:false">
+sudo nano /home/sftpuser/.sftp/authorized_keys</pre><p>将用户的公钥粘贴到该文件中，每行一个。</p><p>6. 进行SFTP连接</p><p>使用SFTP客户端连接到服务器，并尝试上传或下载文件，以下是使用<code>lftp</code>命令行工具进行SFTP连接的示例：</p><pre class="brush:bash;toolbar:false">
+lftp -u sftpuser,sftpuserpass localhost</pre><p><code>sftpuser</code>是用户名，<code>sftpuserpass</code>是用户密码。</p><p>通过以上步骤，您已经成功在Linux系统中为SFTP服务添加了一个新用户，用户现在可以通过SFTP客户端安全地访问和传输文件。</p><br><br>
+			</div>
+		</div>
+
+	</div>
+	<div class="card">
+            <div class="card-head">
+                <i class="fa fa-magnet fa-fw" aria-hidden="true"></i> 猜你喜欢
+            </div>
+            <div class="card-body">
+			                                            <a href="/wzshow/571.html" class="item" title="苹果夜间，揭秘苹果公司的幕后运维策略" data-id="">
+                            <span class="name">苹果夜间，揭秘苹果公司的幕后运维策略</span>
+                        </a>                                            <a href="/wzshow/241.html" class="item" title="揭SEO，助力企业营销，提升品牌影响力的利器" data-id="">
+                            <span class="name">揭SEO，助力企业营销，提升品牌影响力的利器</span>
+                        </a>                                            <a href="/wzshow/107.html" class="item" title="优化工具排名优化，揭秘提升排名的五大神器" data-id="">
+                            <span class="name">优化工具排名优化，揭秘提升排名的五大神器</span>
+                        </a>                                            <a href="/wzshow/470.html" class="item" title="Linux环境下快速创建空白文件的五种方法" data-id="">
+                            <span class="name">Linux环境下快速创建空白文件的五种方法</span>
+                        </a>                                            <a href="/wzshow/332.html" class="item" title="碧空之歌转出，玩家热议，回应揭晓" data-id="">
+                            <span class="name">碧空之歌转出，玩家热议，回应揭晓</span>
+                        </a>                                            <a href="/wzshow/713.html" class="item" title="电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升" data-id="">
+                            <span class="name">电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升</span>
+                        </a>                                            <a href="/wzshow/205.html" class="item" title="Linux统中的端口管理，如何关闭不必要的端口以增强安全性" data-id="">
+                            <span class="name">Linux统中的端口管理，如何关闭不必要的端口以增强安全性</span>
+                        </a>                                            <a href="/wzshow/442.html" class="item" title="Windows 10必须要激活才能使用吗？全面解析统激活的重要性" data-id="">
+                            <span class="name">Windows 10必须要激活才能使用吗？全面解析统激活的重要性</span>
+                        </a>                                            <a href="/wzshow/236.html" class="item" title="Python开发之WebView应用实战，打造个性化小程序体验" data-id="">
+                            <span class="name">Python开发之WebView应用实战，打造个性化小程序体验</span>
+                        </a>                                            <a href="/wzshow/506.html" class="item" title="Python 3程序开发指南（版），全面升级的编程圣经" data-id="">
+                            <span class="name">Python 3程序开发指南（版），全面升级的编程圣经</span>
+                        </a>                                            <a href="/wzshow/407.html" class="item" title="MacBook Pro深度解析，如何配置Windows统" data-id="">
+                            <span class="name">MacBook Pro深度解析，如何配置Windows统</span>
+                        </a>                                            <a href="/wzshow/355.html" class="item" title="Linux环境下高效多线程编程，设置和管理多个子线程的指南" data-id="">
+                            <span class="name">Linux环境下高效多线程编程，设置和管理多个子线程的指南</span>
+                        </a>                                            <a href="/wzshow/461.html" class="item" title="Windows统下轻松查看IP地址的五大方法" data-id="">
+                            <span class="name">Windows统下轻松查看IP地址的五大方法</span>
+                        </a>                                            <a href="/wzshow/624.html" class="item" title="从0到1，零基础小白如何轻松入门开发小程序？" data-id="">
+                            <span class="name">从0到1，零基础小白如何轻松入门开发小程序？</span>
+                        </a>                                       
+                                </div>
+        </div>
+    <div class="card links">
+        <div class="card-head"><i class="fa fa-link fa-fw"></i>友情链接</div>
+        <div class="card-body">
+			                                <a href="http://www.bitmp3.net" target="_blank">辣椒手游网</a>
+                                <a href="http://www.ferryven.net" target="_blank">秋霞手游网</a>
+                                <a href="http://www.alleycatbead.com" target="_blank">18手游网</a>
+                                <a href="http://www.leparamoteur.com" target="_blank">策驰手游网</a>
+                                <a href="http://www.leparamoteur.com" target="_blank">策驰手游网</a>
+                                <a href="http://www.forestparkapp.com" target="_blank">丫丫手游网</a>
+                                <a href="http://www.hyperboxgames.com" target="_blank">夜魔手游网</a>
+                                <a href="http://www.topperbd.com" target="_blank">第一下载站</a>
+                                <a href="http://www.hans-schulte.com" target="_blank">琪琪下载站</a>
+                                <a href="http://www.stoozhi.com" target="_blank">777下载站</a>
+                                <a href="http://www.stoozhi.com" target="_blank">777下载站</a>
+                                <a href="http://www.gram21.com" target="_blank">星辰手游网</a>
+                                <a href="http://www.goaplay.com" target="_blank">优美手游网</a>
+                                <a href="http://www.goaplay.com" target="_blank">优美手游网</a>
+                                <a href="http://www.2dgameworld.com" target="_blank">全能下载站</a>
+                                <a href="http://www.hc1976.com" target="_blank">深夜下载站</a>
+                                <a href="http://www.joltleft.com" target="_blank">西瓜手游网</a>
+                                <a href="http://www.ambipurcar.com" target="_blank">木瓜下载站</a>
+                                <a href="http://www.ventanalegal.com" target="_blank">咪咪手游网</a>
+                                <a href="http://www.loganmay.com" target="_blank">56手游网</a>
+                        </div>
+    </div>
+ </div>
+<ul class="suspend">
+	<li class="back-top" onclick="backTop()">
+		<i class="fa fa-chevron-up"></i>
+		<span class="more">返回顶部</span>
+	</li>
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+			<i class="fa fa-qq"></i>
+			<span class="more">123456</span>
+		</a>
+	</li>
+	<li>
+		<a href="/cdn-cgi/l/email-protection#79484b4a4d4c4f390808571a1614">
+			<i class="fa fa-envelope"></i>
+			<span class="more"><span class="__cf_email__" data-cfemail="3e0f0c0d0a0b087e4f4f105d5153">[email&#160;protected]</span></span>
+		</a>
+	</li>
+	<li>
+		<i class="fa fa-weixin"></i>
+		<span class="more weixin"><img src="/assets/images/weixin.png" alt="微信二维码"></span>
+	</li>
+</ul>
+
+<footer class="footer">
+	<p>Copyright © 2025	<a href="/">git网址导航</a>. All Rights Reserved.</p>
+	<p><div style="display:none;"></div>﻿</p>
+</footer>
+<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/layer/layer.js"></script>
+<script src="/templates/antidote/js/main.js"></script>
+<div class="blx">
+<svg class="wbc"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 130 18"
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="zxt">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#FF3E86"/>
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#9CBB1B"/>
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#00D0FF"/> 
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#FFAA00"/> 
+  </g>
+</svg>
+</div>
+</body>
+</html>
