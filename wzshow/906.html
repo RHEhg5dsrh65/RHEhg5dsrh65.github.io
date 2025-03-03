@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Python开发Flask，入门指南与实战技巧_git网址导航</title>
+        <meta name="keywords" content="Python开发Flask，入门指南与实战技巧">
+        <meta name="description" content="">
+	    <link rel="shortcut icon" type="images/x-icon" href="./favicon.ico"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome-4.7.0/css/font-awesome.css"/>
+	    <link rel="stylesheet" type="text/css" href="/assets/css/ozui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="/templates/antidote/css/style.css"/>
+	        </head>
+    <body>
+<header class="header fixed">
+	<div class="container">
+		<div class="nav-bar">
+			<span></span>
+		</div>
+		<a class="logo" href="./">git网址导航</a>
+	<ul class="nav">
+				<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> <span>导航首页</span></a></li>
+	<li><a href="/ranking.html"><i class="fa fa-flag" aria-hidden="true"></i> <span>排行榜单</span></a></li>
+	<li><a href="/apply.html"><i class="fa fa-plus-square" aria-hidden="true"></i> <span>申请收录</span></a></li>
+	<li><a href="/wz.html"><i class="fa fa-book" aria-hidden="true"></i> <span>文章信息</span></a></li>
+	<li><a href="/about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>关于本站</span></a></li>
+</ul>
+	</div>
+</header><div class="banner">
+    <ul class="search-type">
+        <span class="title">搜索</span>
+        <li data-type="this" class="active">本站</li>
+        <li data-type="baidu">百度</li>
+        <li data-type="sogou">搜狗</li>
+        <li data-type="360">360</li>
+        <li data-type="bing">必应</li>
+    </ul>
+    <form class="search-main" action="/search.html" method="get">
+        <input class="search-input" placeholder="请输入关键词..." name="keyword" required="required">
+        <button type="submit" class="search-btn">本站搜索</button>
+    </form>
+</div>
+<div class="container">
+    <ul class="sort">
+        <li><a href="/"><span>返回首页</span> <i class="fa fa-reply fa-fw"></i></a></li>
+<li><a href="/sort/1.html" class=""><span>大型网站</span> <i class="fa fa-paper-plane fa-fw"></i></a></li>
+<li><a href="/sort/2.html" class=""><span>手游网</span> <i class="fa fa-file-text fa-fw"></i></a></li>
+<li><a href="/sort/3.html" class=""><span>下载网站</span> <i class="fa fa-cubes fa-fw"></i></a></li>
+<li><a href="/sort/4.html" class=""><span>影音网站</span> <i class="fa fa-youtube-play fa-fw"></i></a></li>
+<li><a href="/sort/5.html" class=""><span>IDC网站</span> <i class="fa fa-cloud fa-fw"></i></a></li>
+<li><a href="/sort/6.html" class=""><span>seo工具</span> <i class="fa fa-line-chart  fa-fw"></i></a></li>
+                </ul>
+	<div class="card board">
+		<span class="icon"><i class="fa fa-map-signs fa-fw"></i></span>
+<a href="/">导航首页</a>&nbsp;»&nbsp;<a title="热评" href="/wz/1.html">热评</a></div>
+	<div class="card">
+		<div class="card-body">
+<div class="content">
+				<h1>Python开发Flask，入门指南与实战技巧</h1>
+				<em>2025-03-03&nbsp;&nbsp;&nbsp;&nbsp;git网址导航&nbsp;&nbsp;&nbsp;&nbsp;已浏览344次</em><br><br>
+				
+                                        <p style="text-align:center"><img src="http://www.whxkw.com/zb_users/upload/2025/03/20250302184506174091230652639.jpg" alt="Python开发Flask，入门指南与实战技巧,Python开发Flask，入门指南与实战技巧,Python,解决方案,Python开发,第1张" title="Python开发Flask，入门指南与实战技巧,Python,解决方案,Python开发,第1张"></p><p>1、[Flask简介](#id1)</p><p>2、[Python开发Flask的入门知识](#id2)</p><p>3、[Flask核心功能](#id3)</p><p>4、[Flask常用技巧](#id4)</p><p>5、[实战案例](#id5)</p><p>随着Web开发技术的日新月异，Python凭借其简洁、易学、高效的特性，成为众多开发者的首选编程语言，在Python的Web框架中，Flask以其轻量级、灵活性和易于扩展的优势，备受开发者喜爱，本文将为您深入解析如何利用Python开发Flask应用，涵盖入门知识、核心功能、实用技巧及实战案例。</p><h2 id="id6">Flask简介</h2><p>Flask是一个开源的Python Web框架，由Armin Ronacher于2010年创建，它遵循Werkzeug WSGI工具箱和Jinja2模板引擎，致力于为Web开发提供简单、灵活的解决方案，Flask的核心功能包括路由、模板、表单处理、错误处理等。</p><h2 id="id7">Python开发Flask的入门知识</h2><p>1、<strong>安装Python</strong></p><p>   在开始开发Flask应用之前，请确保您的计算机上已安装Python，<a href="http://www.dreameroom.com" style="color:red" alt="旺达影院">旺达影院</a>您可以从Python官网下载并安装最新的Python版本。</p><p>2、<strong>安装Flask</strong></p><p>   使用pip（Python的包管理器）安装Flask，在命令行中输入以下命令：</p><pre class="brush:bash;toolbar:false">
+   pip install flask</pre><p>3、<strong>创建项目结构</strong></p><p>   创建一个新文件夹作为项目根目录，并在其中创建以下文件：</p><p><code>app.py</code>：Flask应用的主文件</p><p><code>templates/</code>：存放HTML模板的文件夹</p><p><code>static/</code>：存放CSS、JavaScript等静态文件的文件夹</p><p>4、<strong>编写第一个Flask应用</strong></p><p>   在<code>app.py</code>文件中，编写以下代码创建一个基本的Flask应用：</p><pre class="brush:python;toolbar:false">
+   from fla<a href="http://www.complimenters.com" style="color:red" alt="悟空影视">悟空影视</a>sk import Flask
+   app = Flask(__name__)
+   @app.route(\'/\')
+   def hello_world():
+       return \'Hello, World!\'
+   if __name__ == \'__main__\':
+       app.run()</pre><p>   运行<code>app.py</code>文件，在浏览器中访问<code>http://127.0.0.1:5000/</code>，您将看到“Hello, World!”的输出。</p><h2 id="id8">Flask核心功能</h2><p>1、<strong>路由</strong></p><p>   Flask使用装饰器来定义路由，以下是一个简单的路由示例：</p><pre class="brush:python;toolbar:false">
+   @app.route(\'/user/&lt;username&gt;\')
+   def show_user_profile(username):
+       return f\'Hello, {username}!\'</pre><p>2、<strong>模板</strong></p><p>   Flask使用Jinja2模板引擎来渲染HTML页面，在<code>templates</code>文件夹中创建一个名为<code>index.html</code>的文件，并在<code>app.py</code>中调用<code>render_template()</code>函数来渲染模板：</p><pre class="brush:python;toolbar:false">
+   from flask import render_template
+   @app.route(\'/index\')
+   def index():
+       return render_template(\'index.html\')</pre><p><code>index.html</code>如下：</p><pre class="brush:html;toolbar:false">
+   &lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+   &lt;head&gt;
+       &lt;title&gt;Flask Index&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+       &lt;h1&gt;Hello, Flask!&lt;/h1&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;</pre><p>3、<strong>表单处理</strong></p><p>   Flask使用WTForms库来处理表单，以下是一个简单的表单示例：</p><pre class="brush:python;toolbar:false">
+   from flask import Flask, request, render_template
+   from wtforms import Form, StringField, SubmitField
+   from wtforms.validators import DataRequired
+   app = Flask(__name__)
+   app.secret_key = \'your_secret_key\'
+   class NameForm(Form):
+       name = StringField(\'What is your name?\', validators=[DataRequired()])
+       submit = SubmitField(\'Submit\')
+   @app.route(\'/\', methods=[\'GET\', \'POST\'])
+   def index():
+       form = NameForm()
+       if form.validate_on_submit():
+           return render_template(\'result.html\', name=form.name.data)
+       return render_template(\'index.html\', form=form)</pre><p>4、<strong>错误处理</strong></p><p>   Flask允许您自定义错误页面，以下是一个简单的错误处理示例：</p><pre class="brush:python;toolbar:false">
+   @app.errorhandler(404)
+   def page_not_found(e):
+       return render_template(\'404.html\'), 404
+   @app.errorhandler(500)
+   def internal_server_error(e):
+       return render_template(\'500.html\'), 500</pre><h2 id="id9">Flask常用技巧</h2><p>1、<strong>使用Flask蓝图（Blueprints）</strong></p><p>   蓝图允许您将Flask应用分解为多个模块，便于管理和扩展，以下是一个使用蓝图的示例：</p><pre class="brush:python;toolbar:false">
+   from flask import Blueprint
+   mod = Blueprint(\'mod\', __name__)
+   @mod.route(\'/hello\')
+   def hello():
+       return \'Hello from mod!\'</pre><p>   在<code>app.py</code>中注册蓝图：</p><pre class="brush:python;toolbar:false">
+   from flask import Flask
+   from myapp.mod import mod
+   app = Flask(__name__)
+   app.register_blueprint(mod)</pre><p>2、<strong>使用Flask-Migrate进行数据库迁移</strong></p><p>   Flask-Migrate是一个Flask扩展，用于处理数据库迁移，以下是一个使用Flask-Migrate的示例：</p><pre class="brush:python;toolbar:false">
+   from flask import Flask
+   from flask_sqlalchemy import SQLAlchemy
+   from flask_migrate import Migrate
+   app = Flask(__name__)
+   app.config[\'SQLALCHEMY_DATABASE_URI\'] = \'sqlite:///example.db\'
+   db = SQLAlchemy(app)
+   migrate = Migrate(app, db)</pre><p>3、<strong>使用Flask-Login进行用户认证</strong></p><p>   Flask-Login是一个用于处理用户会话的Flask扩展，以下是一个使用Flask-Login的示例：</p><pre class="brush:python;toolbar:false">
+   from flask import Flask, render_template, request, redirect, url_for
+   from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required
+   app = Flask(__name__)
+   app.secret_key = \'your_secret_key\'
+   login_manager = LoginManager(app)
+   class User(UserMixin, db.Model):
+       id = db.Column(db.Integer, primary_key=True)
+       username = db.Column(db.String(64), index=True, unique=True)
+   @login_manager.user_loader
+   def load_user(id):
+       return User.query.get(int(id))
+   @app.route(\'/login\', methods=[\'GET\', \'POST\'])
+   def login():
+       if request.method == \'POST\':
+           username = request.form[\'username\']
+           user = User.query.filter_by(username=username).first()
+           if user:
+               login_user(user)
+               return redirect(url_for(\'index\'))
+   @app.rout<a href="http://www.ventanalegal.com" style="color:red" alt="咪咪手游网">咪咪手游网</a>e(\'/logout\')
+   @login_required
+   def logout():
+       logout_user()
+       return redirect(url_for(\'index\'))
+   if __name__ == \'__main__\':
+       app.run()</pre><h2 id="id10">实战案例</h2><p>以下是一个简单的博客应用案例，使用Flask、Flask-SQLAlchemy和Flask-Migrate进行开发。</p><p>1、<strong>创建项目结构</strong></p><pre class="brush:code;toolbar:false">
+   blog/
+   |-- app.py
+   |-- templates/
+   |   |-- base.html
+   |   |-- index.html
+   |   |-- post.html
+   |   |-- edit_post.html
+   |-- static/
+   |   |-- css/
+   |   |-- js/
+   |-- migrations/
+   |   |-- env.py
+   |   |-- init.py
+   |   |-- versioned_files/
+   |       |-- 1__init__.py
+   |       |-- 2__add_user_table.py
+   |-- requirements.txt</pre><p>2、<strong>编写app.py</strong></p><pre class="brush:python;toolbar:false">
+   from flask import Flask, render_template, request, redirect, url_for, flash
+   from flask_sqlalchemy import SQLAlchemy
+   from flask_migrate import Migrate
+   from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
+   app = Flask(__name__)
+   app.config[\'SQLALCHEMY_DATABASE_URI\'] = \'sqlite:///blog.db\'
+   app.config[\'SECRET_KEY\'] = \'your_secret_key\'
+   db = SQLAlchemy(app)
+   migrate = Migrate(app, db)
+   login_manager = LoginManager(app)
+   class User(UserMixin, db.Model):
+       id = db.Column(db.Integer, primary_key=True)
+       username = db.Column(db.String(64), index=True, unique=True)
+       password_hash = db.Column(db.String(128))
+   class Post(db.Model):
+       id = db.Column(db.Integer, primary_key=True)
+       title = db.Column(db.String(100))
+       body = db.Column(db.Text)
+       author = db.Column(db.Integer, db.ForeignKey(\'user.id\'))
+   @login_manager.user_loader
+   def load_user(id):
+       return User.query.get(int(id))
+   @app.route(\'/\')
+   def index():
+       posts = Post.query.all()
+       return render_template(\'index.html\', posts=posts)
+   @app.route(\'/login\', methods=[\'GET\', \'POST\'])
+   def login():
+       if request.method == \'POST\':
+           username = request.form[\'username\']
+           user = User.query.filter_by(username=username).first()
+           if user and user.password_hash == request.form[\'password\']:
+               login_user(user)
+               return redirect(url_for(\'index\'))
+           flash(\'Invalid username or password\')
+   @app.route(\'/logout\')
+   @login_required
+   def logout():
+       logout_user()
+       return redirect(url_for(\'index\'))
+   @app.route(\'/post/new\', methods=[\'GET\', \'POST\'])
+   @login_required
+   def new_post():
+       if request.method</pre><br><br>
+			</div>
+		</div>
+
+	</div>
+	<div class="card">
+            <div class="card-head">
+                <i class="fa fa-magnet fa-fw" aria-hidden="true"></i> 猜你喜欢
+            </div>
+            <div class="card-body">
+			                                            <a href="/wzshow/571.html" class="item" title="苹果夜间，揭秘苹果公司的幕后运维策略" data-id="">
+                            <span class="name">苹果夜间，揭秘苹果公司的幕后运维策略</span>
+                        </a>                                            <a href="/wzshow/241.html" class="item" title="揭SEO，助力企业营销，提升品牌影响力的利器" data-id="">
+                            <span class="name">揭SEO，助力企业营销，提升品牌影响力的利器</span>
+                        </a>                                            <a href="/wzshow/107.html" class="item" title="优化工具排名优化，揭秘提升排名的五大神器" data-id="">
+                            <span class="name">优化工具排名优化，揭秘提升排名的五大神器</span>
+                        </a>                                            <a href="/wzshow/470.html" class="item" title="Linux环境下快速创建空白文件的五种方法" data-id="">
+                            <span class="name">Linux环境下快速创建空白文件的五种方法</span>
+                        </a>                                            <a href="/wzshow/332.html" class="item" title="碧空之歌转出，玩家热议，回应揭晓" data-id="">
+                            <span class="name">碧空之歌转出，玩家热议，回应揭晓</span>
+                        </a>                                            <a href="/wzshow/897.html" class="item" title="App与小程序发，高效整合，拓展多渠道市场布局" data-id="">
+                            <span class="name">App与小程序发，高效整合，拓展多渠道市场布局</span>
+                        </a>                                            <a href="/wzshow/713.html" class="item" title="电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升" data-id="">
+                            <span class="name">电脑用户必备！盘点几款看课方便的软件，学习效率翻倍提升</span>
+                        </a>                                            <a href="/wzshow/205.html" class="item" title="Linux统中的端口管理，如何关闭不必要的端口以增强安全性" data-id="">
+                            <span class="name">Linux统中的端口管理，如何关闭不必要的端口以增强安全性</span>
+                        </a>                                            <a href="/wzshow/442.html" class="item" title="Windows 10必须要激活才能使用吗？全面解析统激活的重要性" data-id="">
+                            <span class="name">Windows 10必须要激活才能使用吗？全面解析统激活的重要性</span>
+                        </a>                                            <a href="/wzshow/236.html" class="item" title="Python开发之WebView应用实战，打造个性化小程序体验" data-id="">
+                            <span class="name">Python开发之WebView应用实战，打造个性化小程序体验</span>
+                        </a>                                            <a href="/wzshow/506.html" class="item" title="Python 3程序开发指南（版），全面升级的编程圣经" data-id="">
+                            <span class="name">Python 3程序开发指南（版），全面升级的编程圣经</span>
+                        </a>                                            <a href="/wzshow/407.html" class="item" title="MacBook Pro深度解析，如何配置Windows统" data-id="">
+                            <span class="name">MacBook Pro深度解析，如何配置Windows统</span>
+                        </a>                                            <a href="/wzshow/355.html" class="item" title="Linux环境下高效多线程编程，设置和管理多个子线程的指南" data-id="">
+                            <span class="name">Linux环境下高效多线程编程，设置和管理多个子线程的指南</span>
+                        </a>                                            <a href="/wzshow/461.html" class="item" title="Windows统下轻松查看IP地址的五大方法" data-id="">
+                            <span class="name">Windows统下轻松查看IP地址的五大方法</span>
+                        </a>                                       
+                                </div>
+        </div>
+    <div class="card links">
+        <div class="card-head"><i class="fa fa-link fa-fw"></i>友情链接</div>
+        <div class="card-body">
+			                                <a href="http://www.97jav.com" target="_blank">酷客影院</a>
+                                <a href="http://www.planznow.com" target="_blank">星辰下载站</a>
+                                <a href="http://www.kidfyi.com" target="_blank">八戒电影网</a>
+                                <a href="http://www.jztjgy.com" target="_blank">大象手游网</a>
+                                <a href="http://www.koziko.com" target="_blank">蓝海手游网</a>
+                                <a href="http://www.gettinnitusmiracle.net" target="_blank">18手游网</a>
+                                <a href="http://www.xsdebt.com" target="_blank">千百度手游网</a>
+                                <a href="http://www.brosequip.com" target="_blank">飘花下载站</a>
+                                <a href="http://www.rfj999.com" target="_blank">糖心游戏网</a>
+                                <a href="http://www.tourandlearn.com" target="_blank">琪琪免费影院</a>
+                                <a href="http://www.clictopus.com" target="_blank">芒果手游网</a>
+                                <a href="http://www.ferryven.net" target="_blank">秋霞手游网</a>
+                                <a href="http://www.anthemfc.com" target="_blank">乐乐下载站</a>
+                                <a href="http://www.tlcpost.com" target="_blank">土豆下载站</a>
+                                <a href="http://www.bineshofan.com" target="_blank">蜂鸟影院</a>
+                                <a href="http://www.hunterjcollins.com" target="_blank">K8影视</a>
+                                <a href="http://www.8bbbee.com" target="_blank">香蕉下载站</a>
+                                <a href="https://www.sina.com.cn" target="_blank">新浪</a>
+                                <a href="http://www.chenhaokuaiji.com" target="_blank">丝瓜游戏网</a>
+                                <a href="http://www.iguso.com" target="_blank">九九影院</a>
+                        </div>
+    </div>
+ </div>
+<ul class="suspend">
+	<li class="back-top" onclick="backTop()">
+		<i class="fa fa-chevron-up"></i>
+		<span class="more">返回顶部</span>
+	</li>
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes">
+			<i class="fa fa-qq"></i>
+			<span class="more">123456</span>
+		</a>
+	</li>
+	<li>
+		<a href="/cdn-cgi/l/email-protection#7a4b48494e4f4c3a0b0b54191517">
+			<i class="fa fa-envelope"></i>
+			<span class="more"><span class="__cf_email__" data-cfemail="211013121514176150500f424e4c">[email&#160;protected]</span></span>
+		</a>
+	</li>
+	<li>
+		<i class="fa fa-weixin"></i>
+		<span class="more weixin"><img src="/assets/images/weixin.png" alt="微信二维码"></span>
+	</li>
+</ul>
+
+<footer class="footer">
+	<p>Copyright © 2025	<a href="/">git网址导航</a>. All Rights Reserved.</p>
+	<p><div style="display:none;"></div>﻿</p>
+</footer>
+<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/layer/layer.js"></script>
+<script src="/templates/antidote/js/main.js"></script>
+<div class="blx">
+<svg class="wbc"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 130 18"
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="zxt">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#FF3E86"/>
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#9CBB1B"/>
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#00D0FF"/> 
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#FFAA00"/> 
+  </g>
+</svg>
+</div>
+</body>
+</html>
